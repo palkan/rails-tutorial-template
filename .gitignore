@@ -43,3 +43,5 @@ tmp/
 gemfiles/*.lock
 pgdata/*
 !pgdata/.keep
+
+node_modules/

@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "chmod +x exe/* && hmod +x bin/*"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.3.1",

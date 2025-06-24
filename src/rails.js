@@ -54,10 +54,10 @@ export default async function initVM(vmopts = {}) {
 
       ENV["RACK_HANDLER"] = "wasi"
 
-      $LOADED_FEATURES << $LOAD_PATH.resolve_feature_path("bundler")[1]
-      module Bundler; end
-
       require "/rails-vm/boot"
+
+      # TODO: It's not loaded in "rails test" for some reason
+      require "pathname"
 
       require "js"
 

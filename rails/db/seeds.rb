@@ -4,10 +4,10 @@ Product.create!(name: "Pants", inventory_count: 22)
 
 # For authentication
 User.create!(
-  email_address: "you@example.org",
-  password: "s3cr3t",
-  password_confirmation: "s3cr3t"
-) unless User.where(email_address: "you@example.org").exists?
+  email_address: "you@rails.test",
+  password: "qwerty",
+  password_confirmation: "qwerty"
+) unless User.where(email_address: "you@rails.test").exists?
 
 # Create a new product with description and logo attached
 logo = File.open(Rails.root.join("app/assets/images/logo.png"))
