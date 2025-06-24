@@ -1,0 +1,20 @@
+{
+  "name": "rails-tutorial-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "chmod +x exe/* && hmod +x bin/*"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.1",
+    "@ruby/wasm-wasi": "^2.7.1",
+    "@rails-tutorial/wasm": "8.0.2-rc.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.1",
+    "set-cookie-parser": "^2.7.1"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
