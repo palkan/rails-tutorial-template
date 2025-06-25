@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "postinstall": "chmod +x bin/* && chmod +x rails/bin/*"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.3.1",
