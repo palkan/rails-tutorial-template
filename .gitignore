@@ -45,3 +45,4 @@ pgdata/*
 !pgdata/.keep
 
 node_modules/
+.env
