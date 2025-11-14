@@ -1,8 +1,8 @@
 # Rails in-browser tutorial template
 
-> Try to code some Ruby on Rails on Stackblitz: https://stackblitz.com/~/github.com/palkan/rails-tutorial-template
+> Try to vibe-code some Ruby on Rails on Bolt.new: https://bolt.new/github.com/palkan/rails-tutorial-template
 
-This is a complete Ruby on [Rails Getting Started Tutorial](https://guides.rubyonrails.org/getting_started.html) that can be run within an in-browser development environment such as Stackblitz.
+This is a complete Ruby on [Rails Getting Started Tutorial](https://guides.rubyonrails.org/getting_started.html) that can be run within an in-browser development environment such as [Stackblitz](https://stackblitz.com/) or [Bolt.new](https://bolt.new).
 
 ## Usage
 
