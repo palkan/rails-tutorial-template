@@ -7,7 +7,7 @@
     "postinstall": "chmod +x bin/* && chmod +x rails/bin/*"
   },
   "dependencies": {
-    "@electric-sql/pglite": "^0.3.1",
+    "@electric-sql/pglite": "^0.3.14",
     "@ruby/wasm-wasi": "^2.7.1",
     "@rails-tutorial/wasm": "8.0.2-rc.1",
     "express": "^5.1.0",

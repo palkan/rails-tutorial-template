@@ -1,5 +1,6 @@
 import { PGlite } from '@electric-sql/pglite'
-import { join } from "node:path";
+import { join } from 'node:path';
+import { promises as fs } from 'node:fs';
 
 const MULTILINE_RX = /;\s*(SELECT|INSERT|UPDATE|DELETE|CREATE|ALTER|DROP|TRUNCATE|WITH|EXPLAIN|ANALYZE|VACUUM|GRANT|REVOKE|BEGIN|COMMIT|ROLLBACK)/i
 
@@ -32,6 +33,8 @@ export class PGLite4Rails {
 
   async create_interface(dbname) {
     if (this.dbs[dbname]) return this.dbs[dbname].identifier;
+
+    await fs.mkdir(this.dataDir, { recursive: true })
 
     const dataDir = join(this.dataDir, dbname);
 
