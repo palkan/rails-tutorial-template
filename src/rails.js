@@ -6,8 +6,8 @@ import { PGLite4Rails } from "./database.js";
 const rubyWasm = new URL("../node_modules/@rails-tutorial/wasm/dist/rails.wasm", import.meta.url).pathname;
 
 const railsRootDir = new URL("../rails", import.meta.url).pathname;
-// Store pgdata in tmp, so Bolt doesn't break trying to display it (?)
-const pgDataDir = new URL("../tmp/pgdata", import.meta.url).pathname;
+// Store pgdata in node_modules, so Bolt doesn't break trying to display it (?)
+const pgDataDir = new URL("../node_modules/pgdata", import.meta.url).pathname;
 
 export default async function initVM(vmopts = {}) {
   const { args, skipRails } = vmopts;
