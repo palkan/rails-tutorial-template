@@ -12,7 +12,7 @@ First, install the Node dependencies:
 npm install
 ```
 
-Then, go to the `./rails` folder and run some Rails commands. Start with the database setup:
+Then, run some Rails commands. Start with the database setup:
 
 ```sh
 bin/rails db:prepare
